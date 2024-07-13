@@ -135,7 +135,7 @@ main>.tasks-box>button {
 }
 
 main>.tasks {
-    height: 400px;
+    min-height: 398px;
     max-height: 1000px;
     max-width: 90%;
     margin: 0 auto;
