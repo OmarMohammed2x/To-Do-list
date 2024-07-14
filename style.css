@@ -65,19 +65,7 @@ body>nav>.links>ul>li:first-child::after {
     top: 0;
 }
 
-/*
-body>nav>.links>ul>li:first-child:before{
-    content: '';
-    width: calc(100% - 20px);
-    height: 2px;
-    background-color: red;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-body>nav>.links>ul>li:last-child:before{
-    left: 0;
-} */
+
 body>nav>.links>ul>li:last-child {
     border-radius: 0 20px 20px 0;
 }
@@ -126,7 +114,6 @@ main>.tasks-box>input:nth-child(2) {
 
 main>.tasks-box>button {
     display: inline-block;
-    width: 10%;
     height: 40px;
     filter: invert(1);
     font-size: 20px;
@@ -168,11 +155,38 @@ main>.tasks>ul>li>p {
 }
 
 main>.tasks>ul>li>button {
-    width: fit-content;
     height: 30px;
     filter: invert(1);
     margin-left: auto;
     border: 1px solid black;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
+}
+/* media queries */
+@media (max-width:680px) {
+
+    main>.tasks-box>button {
+        font-size: 15px;
+    }
+    main>.tasks-box {
+        gap: 5px !important;
+    }
+    body>nav>.links>ul>li {
+        font-size: 14px;
+        padding: 25px;
+    }
+}
+@media (max-width:300px) {
+
+    body>nav>.links>ul>li {
+        padding: 10px;
+    }
+    main>.tasks>ul>li {
+        
+       padding: 5px; 
+    }
+    main>.tasks>ul>li>button{
+        font-size: 13px;
+    }
 }
